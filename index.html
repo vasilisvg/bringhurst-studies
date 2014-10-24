@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" id="on">
+<head id="alltheway">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chromatic proportion layouts</title>
+	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-006956.css">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div>
+		<main>
+			<h1>Layouts based on chromatic proportions</h1>
+			<p>There's an overview of common page sizes on page 146 of the fourth edition of <cite>The Elements Of Typographic Style</cite>. On this webpage I experiment with these sizes. Is it possible to force the layout on webpages into these strict paper sizes? That's the question I'm trying to answer here. As you can see it's pretty easy to emulate common page sizes, by using <code>min-aspect-ratio</code> media queries, and by defining the <code>width</code> of the body based on the <em>height</em> of the viewport.</p>
+
+			<h2>Why?</h2>
+			<p>Why would you want to do this? There is no real good reason, but there is a very geeky one: the width and height of your browser window <em>rarely</em> correspond to one of the common ratios for paper sizes described by Robert Bringhurst in his book. Since the web is not made out of paper this shouldn't be an issue. And that's correct. Yet still, these are not some random ratios. These are ratios we see in nature, and these are ratios humans've been using for ages in art forms of all kinds. Like architecture, sculpture, paintings, music and proportions of books. In other words, <em>we like these ratios</em>. They look good</p>
+
+			<p>On this page I use four ratios. The octave with a ratio of 1/2, the fifth with a ratio of 2/3, and the fourth with a ratio of 3/4. The other ratios I use are created by doubling them: 1/1, 4/3, 3/2 and 2/1. If you resize this page you'll see that the white canvas always looks good. It always has a proportion that's pleasing to the eye. If you like classic layouts you might like what I did here.</p>
+
+			<h2>Downsides</h2>
+			<p>There are some downsides. First of all, the width of this white canvas is defined by the height of the viewport. This means that breakpoints for the content need to be defined based on the height. Which is weird. And this is hard. I had to write some disturbingly complex mediaqueries to make sure that the content doesn't break on small browser windows. </p>
+
+			<p>The other downside is the fact that I don't use the whole canvas. But that can be seen as an upside as well. Personally I like the fact that we don't have the constraints of the paper size on the web. But I can understand that others are not charmed by that chaotic flexibility.</p>
+
+			<h3>Alternatives</h3>
+			<p>There are many more <em>excellent</em> ratios though. And they all look good. I created a version of this page that contains all of them. Again, no matter what size your browser window is, the white canvas will always look good. There's a thing though. You'll notice it when you resize that page: there's almost no purple background visible. The conclusion I draw from this little experiment is that every rectangle that's approximately the same as one of the excellent ratios looks good. Which is, to be honest, any rectangle. </p>
+		</main>
+		<aside>
+			<h2>Related content</h2>
+			<article>
+				<h3>Toggle the backgrounds</h3>
+				<p>Use the below button to toggle the helper-images on the background on and off</p>
+				<ul class="toggle-buttons">
+					<li><a href="#off">Turn them off</a></li>
+					<li><a href="#on">Turn them on</a></li>
+				</ul>
+			</article>
+			<article>
+				<h3>Related articles</h3>
+				<ul>
+					<li><a href="">How big is an em</a></li>
+					<li><a href="http://nerd.vasilis.nl/ideal-measure-web/">The ideal measure on the web</a></li>
+					<li><a href="http://nerd.vasilis.nl/the-polder-measure/">The polder measure</a></li>
+					<li><a href="http://nerd.vasilis.nl/min-aspect-ratio-mean-look-like/">What does min-aspect-ratio look like</a></li>
+					<li><a href="http://nerd.vasilis.nl/whole-viewport/">The whole viewport</a></li>
+
+				</ul>
+			</article>
+		</aside>
+	</div>
+</body>
+</html>
