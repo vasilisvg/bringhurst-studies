@@ -35,10 +35,12 @@ code, pre, kbd, td.num {
   font-style: normal !important;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, pre {
 	max-width: 30em;
 }
-
+pre {
+	display: none;
+}
 ul {
 	margin: 1em 0;
 	padding: 0;
@@ -91,23 +93,28 @@ html:target aside {
 		width: 50vh;
 	}
 }
+@media (max-width: 20em) {
+	body {
+		width: 100%;
+	}
+}
 @media (min-aspect-ratio: 8/15) {
-	head:target + body {
+	#alltheway + body {
 		width: 53.3333vh;
 	}
 }
 @media (min-aspect-ratio: 9/16) {
-	head:target + body {
+	#alltheway + body {
 		width: 56.25vh;
 	}
 }
 @media (min-aspect-ratio: 3/5) {
-	head:target + body {
+	#alltheway + body {
 		width: 60vh;
 	}
 }
 @media (min-aspect-ratio: 5/8) {
-	head:target + body {
+	#alltheway + body {
 		width: 62.5vh;
 	}
 }
@@ -117,7 +124,7 @@ html:target aside {
 	}
 }
 @media (min-aspect-ratio: 1000/1414) {
-	head:target + body {
+	#alltheway + body {
 		width: 70.7213579vh;
 	}
 }
@@ -127,22 +134,22 @@ html:target aside {
 	}
 }
 @media (min-aspect-ratio: 4/5) {
-	head:target + body {
+	#alltheway + body {
 		width: 80vh;
 	}
 }
 @media (min-aspect-ratio: 5/6) {
-	head:target + body {
+	#alltheway + body {
 		width: 83.3333vh;
 	}
 }
 @media (min-aspect-ratio: 8/9) {
-	head:target + body {
+	#alltheway + body {
 		width: 88.8889vh;
 	}
 }
 @media (min-aspect-ratio: 15/16) {
-	head:target + body {
+	#alltheway + body {
 		width: 93.75vh;
 	}
 }
@@ -156,22 +163,22 @@ html:target aside {
 
 }
 @media (min-aspect-ratio: 16/15) {
-	head:target + body {
+	#alltheway + body {
 		width: 106.6667vh;
 	}
 }
 @media (min-aspect-ratio: 18/16) {
-	head:target + body {
+	#alltheway + body {
 		width: 112.5vh;
 	}
 }
 @media (min-aspect-ratio: 6/5) {
-	head:target + body {
+	#alltheway + body {
 		width: 120vh;
 	}
 }
 @media (min-aspect-ratio: 10/8) {
-	head:target + body {
+	#alltheway + body {
 		width: 125vh;
 	}
 }
@@ -181,7 +188,7 @@ html:target aside {
 	}
 }
 @media (min-aspect-ratio: 2000/1414) {
-	head:target + body {
+	#alltheway + body {
 		width: 141.4vh;
 	}
 }
@@ -191,22 +198,22 @@ html:target aside {
 	}
 }
 @media (min-aspect-ratio: 8/5) {
-	head:target + body {
+	#alltheway + body {
 		width: 160vh;
 	}
 }
 @media (min-aspect-ratio: 10/6) {
-	head:target + body {
+	#alltheway + body {
 		width: 166.6667vh;
 	}
 }
 @media (min-aspect-ratio: 16/9) {
-	head:target + body {
+	#alltheway + body {
 		width: 177.7778vh;
 	}
 }
 @media (min-aspect-ratio: 30/16) {
-	head:target + body {
+	#alltheway + body {
 		width: 187.5vh;
 	}
 }
