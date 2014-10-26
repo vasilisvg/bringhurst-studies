@@ -69,6 +69,11 @@ body {
 	-webkit-transition: background .3s;
 	        transition: background .3s;
 }
+body::before {
+	content: 'less than octave';
+	position: absolute;
+	top: 0;
+}
 html:target body {
 	background: white url(complete-octavoformat.svg) no-repeat 100% 0;
 	background-size: 200% 100vh;
@@ -92,29 +97,74 @@ html:target aside {
 	body {
 		width: 50vh;
 	}
+	body::before {
+		content: 'octave';
+	}
 }
-@media (max-width: 20em) {
-	body {
-		width: 100%;
+@media (min-aspect-ratio: 1000/1924) {
+	#alltheway + body,
+	head:target + body {
+		width: 51.975052vh;
+	}
+	#alltheway + body::before {
+		content: 'tall octagon';
 	}
 }
 @media (min-aspect-ratio: 8/15) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 53.3333vh;
+	}
+	#alltheway + body::before {
+		content: 'major seventh';
+	}
+}
+@media (min-aspect-ratio: 1000/1866) {
+	#alltheway + body,
+	head:target + body {
+		width: 53.5905681vh;
+	}
+	#alltheway + body::before {
+		content: 'tall hexagon';
+	}
+}
+@media (min-aspect-ratio: 1000/1848) {
+	#alltheway + body,
+	head:target + body {
+		width: 54.1125541vh;
+	}
+	#alltheway + body::before {
+		content: 'octagon';
+	}
+}
+@media (min-aspect-ratio: 5/9) {
+	#alltheway + body,
+	head:target + body {
+		width: 55.55556vh;
+	}
+	#alltheway + body::before {
+		content: '5/9';
 	}
 }
 @media (min-aspect-ratio: 9/16) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 56.25vh;
+	}
+	#alltheway + body::before,
+	body::before {
+		content: 'Major seventh';
 	}
 }
 @media (min-aspect-ratio: 3/5) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 60vh;
 	}
 }
 @media (min-aspect-ratio: 5/8) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 62.5vh;
 	}
 }
@@ -124,7 +174,8 @@ html:target aside {
 	}
 }
 @media (min-aspect-ratio: 1000/1414) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 70.7213579vh;
 	}
 }
@@ -134,22 +185,26 @@ html:target aside {
 	}
 }
 @media (min-aspect-ratio: 4/5) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 80vh;
 	}
 }
 @media (min-aspect-ratio: 5/6) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 83.3333vh;
 	}
 }
 @media (min-aspect-ratio: 8/9) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 88.8889vh;
 	}
 }
 @media (min-aspect-ratio: 15/16) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 93.75vh;
 	}
 }
@@ -163,22 +218,26 @@ html:target aside {
 
 }
 @media (min-aspect-ratio: 16/15) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 106.6667vh;
 	}
 }
 @media (min-aspect-ratio: 18/16) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 112.5vh;
 	}
 }
 @media (min-aspect-ratio: 6/5) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 120vh;
 	}
 }
 @media (min-aspect-ratio: 10/8) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 125vh;
 	}
 }
@@ -188,7 +247,8 @@ html:target aside {
 	}
 }
 @media (min-aspect-ratio: 2000/1414) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 141.4vh;
 	}
 }
@@ -198,22 +258,26 @@ html:target aside {
 	}
 }
 @media (min-aspect-ratio: 8/5) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 160vh;
 	}
 }
 @media (min-aspect-ratio: 10/6) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 166.6667vh;
 	}
 }
 @media (min-aspect-ratio: 16/9) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 177.7778vh;
 	}
 }
 @media (min-aspect-ratio: 30/16) {
-	#alltheway + body {
+	#alltheway + body,
+	head:target + body {
 		width: 187.5vh;
 	}
 }
